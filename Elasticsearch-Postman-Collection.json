@@ -16,8 +16,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cat",
-							"protocol": "http",
+							"raw": "{{url}}/_cat",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -41,8 +41,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cat/allocation?v",
-							"protocol": "http",
+							"raw": "{{url}}/_cat/allocation?v",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -67,8 +67,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cluster/health",
-							"protocol": "http",
+							"raw": "{{url}}/_cluster/health",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -113,8 +113,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cluster/stats",
-							"protocol": "http",
+							"raw": "{{url}}/_cluster/stats",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -133,8 +133,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cluster/allocation/explain",
-							"protocol": "http",
+							"raw": "{{url}}/_cluster/allocation/explain",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -154,8 +154,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cat/nodes?v",
-							"protocol": "http",
+							"raw": "{{url}}/_cat/nodes?v",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -180,8 +180,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cluster/reroute?retry_failed=true",
-							"protocol": "http",
+							"raw": "{{url}}/_cluster/reroute?retry_failed=true",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -206,8 +206,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_nodes",
-							"protocol": "http",
+							"raw": "{{url}}/_nodes",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -233,8 +233,8 @@
 							"raw": "{\n    \"persistent\" : {},\n    \"transient\" : {}\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/_cluster/settings",
-							"protocol": "http",
+							"raw": "{{url}}/_cluster/settings",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -259,8 +259,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_tasks?detailed=true&actions=*",
-							"protocol": "http",
+							"raw": "{{url}}/_tasks?detailed=true&actions=*",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -288,8 +288,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_tasks?detailed=true&actions=*",
-							"protocol": "http",
+							"raw": "{{url}}/_tasks?detailed=true&actions=*",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -317,8 +317,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_tasks/{{nodeid}}:{{id}}/_cancel",
-							"protocol": "http",
+							"raw": "{{url}}/_tasks/{{nodeid}}:{{id}}/_cancel",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -374,8 +374,8 @@
 							"raw": "{\n    \"type\": \"fs\",\n    \"settings\": {\n        \"location\": \"{{repository-location}}\",\n        \"compress\": true\n    }\n}\n"
 						},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{repository}}",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{repository}}",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -394,8 +394,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{repository}}/{{snapshot}}wait_for_completion=true",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{repository}}/{{snapshot}}wait_for_completion=true",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -415,8 +415,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{reposirtory}}/_all",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{reposirtory}}/_all",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -436,8 +436,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{repository}}/{{snapshot}}",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{repository}}/{{snapshot}}",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -457,8 +457,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{repository}}/{{snapshot}}/_status",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{repository}}/{{snapshot}}/_status",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -479,8 +479,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cat/snapshots/backup?v&s=start_epoch:desc",
-							"protocol": "http",
+							"raw": "{{url}}/_cat/snapshots/backup?v&s=start_epoch:desc",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -510,8 +510,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{repository}}/05-07-2018*",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{repository}}/05-07-2018*",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -531,8 +531,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_snapshot/{{repository}}/{{snapshot}}",
-							"protocol": "http",
+							"raw": "{{url}}/_snapshot/{{repository}}/{{snapshot}}",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -588,8 +588,8 @@
 							"raw": "{\n    \"index_patterns\" : [\"*\"],\n    \"order\" : 0,\n    \"settings\" : {\n        \"number_of_shards\" : 5,\n        \"number_of_replicas\" : 3\n    },\n    \"version\": 1\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/_template/default",
-							"protocol": "http",
+							"raw": "{{url}}/_template/default",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -608,8 +608,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_template/{{template}}",
-							"protocol": "http",
+							"raw": "{{url}}/_template/{{template}}",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -634,8 +634,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cat/indices?v&s=store.size:desc",
-							"protocol": "http",
+							"raw": "{{url}}/_cat/indices?v&s=store.size:desc",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -664,8 +664,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/{{index}}",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -691,8 +691,8 @@
 							"raw": "{\n  \"source\": {\n    \"remote\": {\n      \"host\": \"http://{{remote-host}}\",\n      \"socket_timeout\": \"5m\",\n      \"connect_timeout\": \"2m\"\n    },\n    \"index\": \"{{index}}\",\n    \"query\": {\n      \"match_all\": {}\n    }\n  },\n  \"dest\": {\n    \"index\": \"{{destination-index}}\"\n  }\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/_reindex",
-							"protocol": "http",
+							"raw": "{{url}}/_reindex",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -710,8 +710,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_all",
-							"protocol": "http",
+							"raw": "{{url}}/_all",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -737,8 +737,8 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_cache/clear",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_cache/clear",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -766,8 +766,8 @@
 							"raw": "{\n    \"actions\" : [\n        { \"add\" : { \"index\" : \"cdsdev2_customer_5a95aaadd9f37f55839205b757e4458200618c27\", \"alias\" : \"customer\" } }\n    ]\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/_recovery?human",
-							"protocol": "http",
+							"raw": "{{url}}/_recovery?human",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -799,8 +799,8 @@
 							"raw": "{\n    \"actions\" : [\n        { \"add\" : { \"index\" : \"cdsdev2_customer_5a95aaadd9f37f55839205b757e4458200618c27\", \"alias\" : \"customer\" } }\n    ]\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_recovery?human",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_recovery?human",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -833,8 +833,8 @@
 							"raw": "{\n    \"actions\" : [\n        { \"add\" : { \"index\" : \"cdsdev2_customer_5a95aaadd9f37f55839205b757e4458200618c27\", \"alias\" : \"customer\" } }\n    ]\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_shard_stores",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_shard_stores",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -861,8 +861,8 @@
 							"raw": "{\n    \"actions\" : [\n        { \"add\" : { \"index\" : \"cdsdev2_customer_5a95aaadd9f37f55839205b757e4458200618c27\", \"alias\" : \"customer\" } }\n    ]\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/_shard_stores?status=red",
-							"protocol": "http",
+							"raw": "{{url}}/_shard_stores?status=red",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -894,8 +894,8 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_refresh",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_refresh",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -922,8 +922,8 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_flush",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_flush",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -950,8 +950,8 @@
 							"raw": "{\n    \"index\" : {\n        \"number_of_replicas\" : 1\n    }\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_settings",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_settings",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -978,8 +978,8 @@
 							"raw": "{\n    \"index\" : {\n        \"number_of_replicas\" : 1\n    }\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_settings",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_settings",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -1034,8 +1034,8 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://{{url}}/{{index}}/_alias/{{alias}}",
-							"protocol": "http",
+							"raw": "{{url}}/{{index}}/_alias/{{alias}}",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -1063,8 +1063,8 @@
 							"raw": "{\n    \"actions\" : [\n        { \"add\" : { \"index\" : \"{{index}}\", \"alias\" : \"{{alias}}\" } }\n    ]\n}"
 						},
 						"url": {
-							"raw": "http://{{url}}/_aliases",
-							"protocol": "http",
+							"raw": "{{url}}/_aliases",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -1082,8 +1082,8 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://{{url}}/_cat/aliases?v",
-							"protocol": "http",
+							"raw": "{{url}}/_cat/aliases?v",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
 							],
@@ -1125,5 +1125,36 @@
 				}
 			]
 		}
-	]
+	],
+	"variable": [{
+		"key": "url",
+		"value": "elasticsearch:9200"
+	}, {
+		"key": "protocol",
+		"value": "http"
+	}, {
+		"key": "index",
+		"value": ""
+	}, {
+		"key": "alias",
+		"value": ""
+	}, {
+		"key": "repository",
+		"value": ""
+	}, {
+		"key": "snapshot",
+		"value": ""
+	}, {
+		"key": "repository-location",
+		"value": ""
+	}, {
+		"key": "remote-host",
+		"value": ""
+	}, {
+		"key": "destination-index",
+		"value": ""
+	}, {
+		"key": "template",
+		"value": ""
+	}]
 }
